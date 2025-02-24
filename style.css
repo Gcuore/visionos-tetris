@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars */
+    background-color: #70c5ce; /* Sky blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure full viewport height */
+}
+
+#gameCanvas {
+    display: block; /* Prevent canvas from having a small gap at the bottom */
+    border: none; /* Remove default border */
+    background-color: transparent; /* Canvas background is handled in JS */
+}
+
+/* Apple-style button example */
+.apple-button {
+    background-color: #4CAF50; /* Example color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;  /* Rounded corners */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; /* Apple font stack */
+    cursor: pointer;
+    -webkit-appearance: none; /* Remove default button styling */
+}
+
+/* ... more styles for pipes, bird, etc. */
