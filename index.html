@@ -1,59 +1,13 @@
-<html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.8" />
-    <title>Tetris VisionOS</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body tabindex="0">
-    <header>
-      <h1>Tetris VisionOS</h1>
-      <div id="score">Score: 0</div>
-    </header>
-    <div id="game-container">
-      <svg
-        id="game-board"
-        viewBox="0 0 200 400"
-        preserveAspectRatio="xMidYMid meet"
-      >
-        <defs>
-          <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stop-color="#3a3a3a" />
-            <stop offset="100%" stop-color="#1a1a1a" />
-          </linearGradient>
-        </defs>
-        <rect width="200" height="400" fill="url(#bg-gradient)" />
-        <g id="board-group"></g>
-        <g id="piece-group"></g>
-      </svg>
-    </div>
-    <div id="dpad">
-      <div class="dpad-row">
-        <button id="rotate-btn" class="dpad-btn">
-          <svg viewBox="0 0 24 24" width="24" height="24">
-            <path
-              fill="currentColor"
-              d="M12 5V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 .34-.03.67-.08 1h2.02c.05-.33.06-.66.06-1 0-4.42-3.58-8-8-8zm-6 7c0-.34.03-.67.08-1H4.06c-.05.33-.06.66-.06 1 0 4.42 3.58 8 8 8v4l4-4-4-4v3c-3.31 0-6-2.69-6-6z"
-            />
-          </svg>
-        </button>
-      </div>
-      <div class="dpad-row">
-        <button id="left-btn" class="dpad-btn">◀</button>
-        <button id="down-btn" class="dpad-btn">▼</button>
-        <button id="right-btn" class="dpad-btn">▶</button>
-      </div>
-    </div>
-    <div id="modal-overlay">
-      <div id="ad-modal">
-        <button class="close-btn">&times;</button>
-        <img src="heinz-best-ads.png" alt="Heinz Ketchup Advertisement" />
-      </div>
-    </div>
-    <script type="module" src="game.js"></script>
-  </body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flappy Bird PWA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">  <meta name="apple-mobile-web-app-status-bar-style" content="black"> <link rel="apple-touch-icon" href="icons/icon-192x192.png"> </head>
+<body>
+    <canvas id="gameCanvas" width="320" height="480"></canvas>
+    <script src="script.js"></script>
+</body>
 </html>
